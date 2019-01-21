@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>GECCO2019 - Bi-objective Traveling Thief Competition &#8212; thief 0.1.2 documentation</title>
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+          GECCO2019</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+                <li><a href="https://github.com/julesy89/gecco19-thief">Source Code</a></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"></ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Content <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">GECCO2019 - Bi-objective Traveling Thief Competition</a></li>
+<li><a class="reference internal" href="#news">News</a></li>
+<li><a class="reference internal" href="#motivation">Motivation</a></li>
+<li><a class="reference internal" href="#competition">Competition</a></li>
+<li><a class="reference internal" href="#problem">Problem</a><ul>
+<li><a class="reference internal" href="#traveling-salesman-problem-tsp">Traveling Salesman Problem (TSP)</a></li>
+<li><a class="reference internal" href="#knapsack-problem-knp">Knapsack Problem (KNP)</a></li>
+<li><a class="reference internal" href="#traveling-thief-problem-ttp">Traveling Thief Problem (TTP)</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#contact">Contact</a></li>
+<li><a class="reference internal" href="#references">References</a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+              <li class="hidden-sm">
+<div id="sourcelink">
+  <a href="_sources/index.rst.txt"
+     rel="nofollow">Source</a>
+</div></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 content">
+      
+  <div class="toctree-wrapper compound">
+</div>
+<div class="section" id="gecco2019-bi-objective-traveling-thief-competition">
+<h1>GECCO2019 - Bi-objective Traveling Thief Competition<a class="headerlink" href="#gecco2019-bi-objective-traveling-thief-competition" title="Permalink to this headline">¶</a></h1>
+<a class="reference internal image-reference" href="_images/logo.png"><img alt="_images/logo.png" src="_images/logo.png" style="height: 250px;" /></a>
+<p>The Genetic and Evolutionary Computation Conference (GECCO) presents the latest high-quality results in genetic and evolutionary computation since 1999. Topics include: genetic algorithms, genetic programming, ant colony optimization and swarm intelligence, complex systems (artificial life/robotics/evolvable hardware/generative and developmental systems/artificial immune systems), digital entertainment technologies and arts, evolutionary combinatorial optimization and metaheuristics, evolutionary machine learning, evolutionary multiobjective optimization, evolutionary numerical optimization, real world applications, search-based software engineering, theory and more.</p>
+</div>
+<div class="section" id="news">
+<h1>News<a class="headerlink" href="#news" title="Permalink to this headline">¶</a></h1>
+</div>
+<div class="section" id="motivation">
+<h1>Motivation<a class="headerlink" href="#motivation" title="Permalink to this headline">¶</a></h1>
+<p>Real-world optimization problems often consist of several NP-hard combinatorial optimization problems that interact with each other.
+Such multi-component optimization problems are difficult to solve not only because of the contained hard optimization problems, but in particular,
+because of the interdependencies between the different components.
+Interdependence complicates a decision making by forcing each sub-problem to influence the quality and feasibility of solutions of the other sub-problems.
+This influence might be even stronger when one sub-problem changes the data used by another one through a solution construction process.
+Examples of multi-component problems are vehicle routing problems under loading constraints, maximizing material utilization while respecting a production schedule,
+and relocation of containers in a port while minimizing idle times of ships.</p>
+<p>The goal of this competition is to provide a platform for researchers in computational intelligence working on multi-component optimization problems.
+The main focus of this competition is on the combination of TSP and Knapsack problems. However, we plan to extend this competition format to more complex combinations of problems (that have typically been dealt with individually in the past decades) in the upcoming years.</p>
+</div>
+<div class="section" id="competition">
+<h1>Competition<a class="headerlink" href="#competition" title="Permalink to this headline">¶</a></h1>
+<p>The Traveling Thief Problem was originally proposed in  <a class="reference internal" href="#first-steps" id="id1">[1]</a>. If you like to know more about the problem
+origin we encourage you to read this paper as a starting point. The test problems used for this competition
+were proposed in <a class="reference internal" href="#polyakovskiy-2014-cbs-2576768-2598249" id="id2">[2]</a>. We selected a representative set to cover
+varying scenarios for the traveling thief for this competition. The bi-objective traveling thief problem was discussed and investigated in
+<a class="reference internal" href="#blank-2017-sbt-3088676-3088680" id="id3">[3]</a>.</p>
+<p><strong>How to get started</strong></p>
+<p>For guidance, a sample Java implementation is provided: <a class="reference external" href="https://github.com/julesy89/gecco19-thief">here</a>.
+You can find information about how to get started there as well. It should provide a starting point to get familiar
+with the problem and prototype quickly new ideas.
+However, for this competition you have the freedom to use whatever you need, e.g. speed up the evaluation function,
+reimplement the problem in other programming languages (e.g. C, Matlab, Python).</p>
+<p><strong>Test Instances</strong></p>
+<p>The nine test instances:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="7%" />
+<col width="7%" />
+<col width="21%" />
+<col width="66%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">#</th>
+<th class="head">n</th>
+<th class="head">Name</th>
+<th class="head">Instance in <a class="reference internal" href="#polyakovskiy-2014-cbs-2576768-2598249" id="id4">[2]</a></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>1</td>
+<td>100</td>
+<td>a280_n279</td>
+<td>a280_n279_bounded-strongly-corr_01</td>
+</tr>
+<tr class="row-odd"><td>2</td>
+<td>100</td>
+<td>a280_n1395</td>
+<td>a280_n1395_uncorr-similar-weights_05</td>
+</tr>
+<tr class="row-even"><td>3</td>
+<td>100</td>
+<td>a280_n2790</td>
+<td>a280_n2790_uncorr_10</td>
+</tr>
+<tr class="row-odd"><td>4</td>
+<td>50</td>
+<td>fnl4461_n4460</td>
+<td>fnl4461_n4460_bounded-strongly-corr_01</td>
+</tr>
+<tr class="row-even"><td>5</td>
+<td>50</td>
+<td>fnl4461_n22300</td>
+<td>fnl4461_n22300_uncorr-similar-weights_05</td>
+</tr>
+<tr class="row-odd"><td>6</td>
+<td>50</td>
+<td>fnl4461_n44600</td>
+<td>fnl4461_n44600_uncorr_10</td>
+</tr>
+<tr class="row-even"><td>7</td>
+<td>20</td>
+<td>pla33810_n33809</td>
+<td>pla33810_n33809_bounded-strongly-corr_01</td>
+</tr>
+<tr class="row-odd"><td>8</td>
+<td>20</td>
+<td>pla33810_n169045</td>
+<td>pla33810_n169045_uncorr-similar-weights_05</td>
+</tr>
+<tr class="row-even"><td>9</td>
+<td>20</td>
+<td>pla33810_n338090</td>
+<td>pla33810_n338090_uncorr_10</td>
+</tr>
+</tbody>
+</table>
+<p>For simplicity, we shortened the file name of the selected instances. However, the original instances are annotated above.
+The column <strong>n</strong> represents the MAXIMUM number of non-dominated solutions being accepted for the submission for each test problem.</p>
+<p><strong>Submission Format</strong></p>
+<p>To participate in the competition it is required to submit your solutions for ALL test problems.
+For each problem two files need to be submitted (i) one file that contains the tour and packing plan and (ii) one file
+that contains the time and profits for each corresponding solution. The filenames are supposed to be <em>&lt;team&gt;_&lt;problem&gt;.x</em>
+and <em>&lt;team&gt;_&lt;problem&gt;.f</em>.</p>
+<p>First, the file containing the tour and packing plan (<em>&lt;team&gt;_&lt;problem&gt;.x</em>) contains for each solution two lines where the
+first represents the permutation vector and the second line the packing plan encoded by 0 and 1. Then one empty line
+is added to separate one solution from another. An example output can be found <a class="reference external" href="_static/MY-TEAM_test-example-n4.x">here</a>.</p>
+<p>Second the file containing the objective space values (<em>&lt;team&gt;_&lt;problem&gt;.f</em>) contains the corresponding time and profit
+separated by space. An example output can be found <a class="reference external" href="_static/MY-TEAM_test-example-n4.f">here</a>.</p>
+<p>The test instances are included in the Github project and a method to run your algorithm on them already exists.</p>
+<p><strong>Submission</strong></p>
+<p>Deadline for this competition is the</p>
+<p class="center"><strong>TBA, 2019, Midnight, UTC-12</strong></p>
+<p>Please submit by sending an email to <a class="reference external" href="mailto:blankjul&#37;&#52;&#48;egr&#46;msu&#46;edu">blankjul<span>&#64;</span>egr<span>&#46;</span>msu<span>&#46;</span>edu</a> with the subject: <strong>GECCO2019 Competition - Traveling Thief Submission</strong>
+and provide as a link where we are able to download your results.</p>
+<p><strong>Evaluation</strong></p>
+<p>After having received all submissions, the evaluation will be done as follows:</p>
+<p><em>For each of the nine test problems</em></p>
+<ol class="loweralpha simple">
+<li>We will merge the solution sets of all submissions and extract the non-dominated set.</li>
+<li>The minimum in time and the maximum in profit will be used to determine the reference point.</li>
+<li>With respect to this reference point the quality of each submission will be measured using the hypervolume indicator.</li>
+<li>We will sort the submissions according to the achieved hypervolume in descending order and give points as follows: 1st place -&gt; 3 points, 2nd place -&gt; 2 points, 3rd place -&gt; 1 point.</li>
+</ol>
+<p>By adding up the points for each submission we will create the overall ranking.
+<em>Please note, that depending on the number of submissions the evaluation might need to be reconsidered.</em></p>
+</div>
+<div class="section" id="problem">
+<h1>Problem<a class="headerlink" href="#problem" title="Permalink to this headline">¶</a></h1>
+<p>The traveling thief problem combines the Traveling Salesman Problem (TSP) and the Knapsack Problem (KNP). Both problems will be explained in the following sections.</p>
+<div class="section" id="traveling-salesman-problem-tsp">
+<h2>Traveling Salesman Problem (TSP)<a class="headerlink" href="#traveling-salesman-problem-tsp" title="Permalink to this headline">¶</a></h2>
+<p>In the TSP a salesman has to visit <span class="math notranslate nohighlight">\(n\)</span> cities. The distances are given by a map represented as a distance matrix <span class="math notranslate nohighlight">\(A = (d_{ij})\)</span> with <span class="math notranslate nohighlight">\(i,j \in \{0,..,n\}\)</span>. The salesman has to visit each city once and the result is a permutation vector <span class="math notranslate nohighlight">\(\pi = (\pi_1, \pi_2, ..., \pi_n)\)</span> , where <span class="math notranslate nohighlight">\(\pi_i\)</span> is the i-th city of the salesman.
+The distance between two cities divided by a constant velocity <span class="math notranslate nohighlight">\(v\)</span> results in the traveling time for the salesman denoted by <span class="math notranslate nohighlight">\(f(\pi)\)</span>.
+The goal is to minimize the total traveling time of the tour:</p>
+<div class="math notranslate nohighlight">
+ \begin{eqnarray}
+     min &amp; &amp; f(\pi)  \\
+     s.t. &amp; &amp;\pi = (\pi_1, \pi_2, ..., \pi_n) \in P_n \\[1mm]
+     &amp; &amp;\pi_1 = 1 \\[1mm]
+     f(\pi) &amp; = &amp; \sum_{i=1}^{n-1} \frac{ d_{\pi_i, \pi_{i+1}}}{v} \; +  \; \frac{ d_{\pi_n, \pi_{1}}}{v}\nonumber
+ \end{eqnarray}</div><p>There are <span class="math notranslate nohighlight">\(\frac{(n-1)!}{2}\)</span> different tours to consider,
+if we assume that the salesman has to start from the first city
+and travels on a symmetric map where <span class="math notranslate nohighlight">\(d_{i,j} = d_{j,i}\)</span>.</p>
+</div>
+<div class="section" id="knapsack-problem-knp">
+<h2>Knapsack Problem (KNP)<a class="headerlink" href="#knapsack-problem-knp" title="Permalink to this headline">¶</a></h2>
+<p>For the Knapsack Problem a knapsack has to be filled with items without violating the maximum weight constraint. Each item <span class="math notranslate nohighlight">\(j\)</span> has a value <span class="math notranslate nohighlight">\(b_j \geq 0\)</span>  and a weight <span class="math notranslate nohighlight">\(w_j \geq 0\)</span> where <span class="math notranslate nohighlight">\(j \in \{1, .., m\}\)</span>.
+The binary decision vector <span class="math notranslate nohighlight">\(z = (z_1, .., z_m)\)</span> defines, if an item is picked or not.
+The search space of this problem contains <cite>2^n</cite> combinations and the goal is to maximize the profit <span class="math notranslate nohighlight">\(g(z)\)</span>:</p>
+<div class="math notranslate nohighlight">
+ \begin{eqnarray}
+     max &amp; &amp; g(z) \\
+     \text{s.t.} &amp; &amp; \sum_{j=1}^m z_j \, w_j \leq Q\\
+     &amp; &amp; z = (z_1, .., z_m) \in \mathbb{B}^m\\
+     g(z) &amp; = &amp; \sum_{j=1}^{m}  z_j \, b_j \\
+ \end{eqnarray}</div></div>
+<div class="section" id="traveling-thief-problem-ttp">
+<h2>Traveling Thief Problem (TTP)<a class="headerlink" href="#traveling-thief-problem-ttp" title="Permalink to this headline">¶</a></h2>
+<p>The TTP is a combinatorial optimization problem that consists of two interweaving problems, TSP and KNP.
+After explaining the two components separately, the interdependence and the different models of the problem are described.</p>
+<p>The Traveling Thief Problem combines the above defined subproblems and lets them interact with each other. The traveling thief can collect items from each city he is visiting. The items are stored in a knapsack carried by him. In more detail,
+each city <span class="math notranslate nohighlight">\(\pi_i\)</span> provides one or multiple items, which could be picked by the thief. There is an interaction between the subproblems:
+The velocity of the traveling thief depends on the current knapsack weight <span class="math notranslate nohighlight">\(w\)</span>, which is carried by him. It is calculated by considering all cities, which were visited so far, and summing up the weights of all picked items. The weight at city <span class="math notranslate nohighlight">\(i\)</span> given <span class="math notranslate nohighlight">\(\pi\)</span> and <span class="math notranslate nohighlight">\(z\)</span> is calculated by:</p>
+<div class="math notranslate nohighlight">
+\begin{equation}
+ w(i, \pi, z) = \sum_{k=1}^{i} \sum_{j=1}^{m} a_j(\pi_k)\; w_j z_j
+\end{equation}</div><p>The function <span class="math notranslate nohighlight">\(a_j(\pi_k)\)</span> is defined for each item <span class="math notranslate nohighlight">\(j\)</span> and returns <span class="math notranslate nohighlight">\(1\)</span> if the item could be stolen at city <span class="math notranslate nohighlight">\(\pi_k\)</span> and <span class="math notranslate nohighlight">\(0\)</span> otherwise.
+The current weight of the knapsack has an influence on the velocity.
+When the thief picks an item, the weight of the knapsack increases and therefore the velocity of the thief decreases.</p>
+<p>The velocity <span class="math notranslate nohighlight">\(v\)</span> is always in a specific range <span class="math notranslate nohighlight">\(v = [v_{min}, v_{max}]\)</span> and could not be negative for a feasible solution.
+Whenever the knapsack is heavier than the maximum weight <span class="math notranslate nohighlight">\(Q\)</span>, the capacity constraint is violated.
+However, to provide also the traveling time for infeasible solutions the velocity is set to <span class="math notranslate nohighlight">\(v_{min}\)</span>, if <span class="math notranslate nohighlight">\(w&gt;Q\)</span>:</p>
+<div class="math notranslate nohighlight">
+ \begin{align}
+  v(w) &amp;=
+   \begin{cases}
+    \; v_{max} - \frac{w}{Q} \cdot (v_{max} - v_{min}) &amp; \text{if } w \leq Q \\
+    \; v_{min}        &amp; \text{otherwise}
+   \end{cases}
+ \end{align}</div><p>If the knapsack is empty the velocity is equal to <span class="math notranslate nohighlight">\(v_{max}\)</span>.
+Contrarily, if the current knapsack weight is equal to <span class="math notranslate nohighlight">\(Q\)</span> the velocity is <span class="math notranslate nohighlight">\(v_{min}\)</span>.</p>
+<p>Furthermore, the traveling time of the thief is calculated by:</p>
+<div class="math notranslate nohighlight">
+ \begin{equation}
+ f(\pi, z) = \sum_{i=1}^{n-1} \frac{ d_{\pi_i, \pi_{i+1}}}{ v( w(i,\pi,z) )  }
+ \; + \; \; \frac{ d_{\pi_n, \pi_{1}}}{ v( w(n,\pi,z) )}  \\
+ \end{equation}</div><p>The calculation is based on TSP, but the velocity is defined by a function instead of a constant value.
+This function takes the current weight, which depends on the index <span class="math notranslate nohighlight">\(i\)</span> of the tour.
+The current weight, and therefore also the velocity, will change on the tour by considering the picked items defined by <span class="math notranslate nohighlight">\(z\)</span>.
+In order to calculate the total tour time, the velocity at each city needs to be known.
+For calculating the velocity at each city the current weight of the knapsack must be given.
+Since both calculations are based on <span class="math notranslate nohighlight">\(z\)</span> and <span class="math notranslate nohighlight">\(z\)</span> is part of the knapsack subproblem, it is very challenging to solve the problem to optimality.
+In fact, such problems are called interwoven systems as the solution of one subproblem highly depends on the solution of the other subproblems.</p>
+<p>Here, we leave the profit unchanged to be calculated as in the KNP problem.
+Finally, the TTP problem is defined by</p>
+<div class="math notranslate nohighlight">
+ \begin{eqnarray}
+     min &amp; &amp; f(\pi, z)  \\
+     max &amp; &amp; g(z) \\
+
+     f(\pi, z) &amp; = &amp; \sum_{i=1}^{n-1} \frac{ d_{\pi_i, \pi_{i+1}}}{ v( w(i,\pi,z) )  }
+         \; + \; \; \frac{ d_{\pi_n, \pi_{1}}}{ v( w(n,\pi,z) )}  \\[1mm]
+
+     g(z) &amp; = &amp; \sum_{j=1}^{m}  z_j \, b_j \\
+
+
+
+     s.t. &amp; &amp;\pi = (\pi_1, \pi_2, ..., \pi_n) \in P_n \\[1mm]
+     &amp; &amp; \pi_1 = 1 \\[1mm]
+     &amp; &amp; z = (z_1, .., z_m) \in \mathbb{B}^m\\
+     &amp; &amp; \sum_{j=1}^m z_j \, w_j \leq Q\\
+
+ \end{eqnarray}</div><p>In order to illustrate the equations and interdependence, an example scenario is presented in the following.
+The thief starts at city 1 and has to visit city 2, 3, 4 exactly once and to return to city 1.
+In this example, each city provides one item and the thief must decide to steal item or not.</p>
+<a class="reference internal image-reference" href="_images/scenario.svg"><div align="center" class="align-center"><img alt="_images/scenario.svg" src="_images/scenario.svg" width="400px" /></div>
+</a>
+<p>A permutation vector, which contains all cities exactly once, and a binary picking vector are needed to calculate the objectives.
+Even though, this is a very small example with four cities and three items the solution space consists of <span class="math notranslate nohighlight">\((n-1)! \cdot 2^m = 6 \cdot 8 = 48\)</span> combinations.</p>
+<p>In order to understand how the objectives are calculated, an example hand calculation for the tour <em>[1,3,2,4]</em> and the packing plan <em>[1,0,1]</em> is done as follows:
+The thief starts with the maximum velocity, because the knapsack is empty. He begins his tour at city <em>1</em> and picks no item there.</p>
+<p>For an empty knapsack <span class="math notranslate nohighlight">\(w(1,\pi,z) = 0\)</span> the velocity is <span class="math notranslate nohighlight">\(v(0) = v_{max} = 1.0\)</span>. The distance from city <em>1</em> to city <em>3</em> is <span class="math notranslate nohighlight">\(9.0\)</span> and the thief needs <span class="math notranslate nohighlight">\(9.0\)</span> time units.
+At city <em>3</em> the thief will not pick an item and continue to travel to city <em>2</em> with <span class="math notranslate nohighlight">\(w(2,\pi,z) = 0\)</span> and therefore with <span class="math notranslate nohighlight">\(v_{max}\)</span> in additional <span class="math notranslate nohighlight">\(5.0\)</span> time units.
+Here he picks item <em>1</em> with <span class="math notranslate nohighlight">\(w_1 = 30\)</span> and the current weight becomes <span class="math notranslate nohighlight">\(w(2,\pi,z) = 30\)</span>,
+which means the velocity will be reduced to <span class="math notranslate nohighlight">\(v(30) = 1.0 - (\frac{1.0 - 0.1}{80}) \cdot 30 = 0.6625\)</span>.
+For traveling from city <em>2</em> to city <em>4</em> the thief needs the distance divided by the current velocity <span class="math notranslate nohighlight">\(\frac{5.0}{0.6625} \approx 7.5472\)</span>.
+At city <em>4</em> he picks item <em>3</em> with <span class="math notranslate nohighlight">\(w_3 = 21\)</span> and the current knapsack weight increases to <span class="math notranslate nohighlight">\(w(4,\pi,z) = 30 + 21 = 51\)</span>.
+For this reason the velocity decreases to <span class="math notranslate nohighlight">\(v(51) = 1.0 - (\frac{1.0 - 0.1}{80}) \cdot 51 = 0.42625\)</span>.
+For returning to city <em>1</em> the thief needs according to this current speed <span class="math notranslate nohighlight">\(\frac{3.0}{0.42625} \approx 7.0381\)</span> time units.
+Finally, we sum up the time for traveling from each city to the next <span class="math notranslate nohighlight">\(\sum_{k=1}^{4} t_{\pi_k, \pi_{k+1}} = 9 + 5 + 7.5472 + 7.0381 = 28.5853\)</span> to calculate the whole traveling time.</p>
+<a class="reference internal image-reference" href="_images/scenario_table.svg"><div align="center" class="align-center"><img alt="_images/scenario_table.svg" src="_images/scenario_table.svg" width="500px" /></div>
+</a>
+<p>The final profit is calculated by summing up the values of all items which is <span class="math notranslate nohighlight">\(34 + 25 = 59\)</span>. So the variable <em>[1,3,2,4]</em> <em>[1,0,1]</em> is mapped to the point <span class="math notranslate nohighlight">\((28.59, 59.0)\)</span> in the objective space.
+Below you can find all pareto-optimal solutions of this example. The Pareto front contains 8 solutions and our hand calculation is printed bold.</p>
+<a class="reference internal image-reference" href="_images/scenario_front.svg"><div align="center" class="align-center"><img alt="_images/scenario_front.svg" src="_images/scenario_front.svg" width="300px" /></div>
+</a>
+<p>Additionally, the figure below shows the objective space colored by tour. As it can be observed pareto-optimal solutions
+can have different underlying tours. Please also not that the point where no items are picked consists of two different solutions
+with a symmetric tour. Also, the Pareto front is non-convex.</p>
+<a class="reference internal image-reference" href="_images/scenario_obj_space.svg"><div align="center" class="align-center"><img alt="_images/scenario_obj_space.svg" src="_images/scenario_obj_space.svg" width="400px" /></div>
+</a>
+</div>
+</div>
+<div class="section" id="contact">
+<h1>Contact<a class="headerlink" href="#contact" title="Permalink to this headline">¶</a></h1>
+<div class="line-block">
+<div class="line">Julian Blank (blankjul [at] egr.msu.edu)</div>
+<div class="line">Michigan State University</div>
+<div class="line">Computational Optimization and Innovation Laboratory (COIN)</div>
+<div class="line">East Lansing, MI 48824, USA</div>
+</div>
+<div class="line-block">
+<div class="line">Markus Wagner (markus.wagner [at] adelaide.edu.au)</div>
+<div class="line">The University of Adelaide, Australia</div>
+<div class="line">Adelaide, SA 5005, Australia</div>
+</div>
+</div>
+<div class="section" id="references">
+<h1>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h1>
+<p id="bibtex-bibliography-index-0"><table class="docutils citation" frame="void" id="first-steps" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td>M.&nbsp;R. Bonyadi, Z.&nbsp;Michalewicz, and L.&nbsp;Barone. The travelling thief problem: the first step in the transition from theoretical problems to realistic problems. In <em>2013 IEEE Congress on Evolutionary Computation</em>, volume, 1037–1044. June 2013. <a class="reference external" href="https://doi.org/10.1109/CEC.2013.6557681">doi:10.1109/CEC.2013.6557681</a>.</td></tr>
+</tbody>
+</table>
+<table class="docutils citation" frame="void" id="polyakovskiy-2014-cbs-2576768-2598249" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label">[2]</td><td><em>(<a class="fn-backref" href="#id2">1</a>, <a class="fn-backref" href="#id4">2</a>)</em> Sergey Polyakovskiy, Mohammad&nbsp;Reza Bonyadi, Markus Wagner, Zbigniew Michalewicz, and Frank Neumann. A comprehensive benchmark set and heuristics for the traveling thief problem. In <em>Proceedings of the 2014 Annual Conference on Genetic and Evolutionary Computation</em>, GECCO ‘14, 477–484. New York, NY, USA, 2014. ACM. URL: <a class="reference external" href="http://doi.acm.org/10.1145/2576768.2598249">http://doi.acm.org/10.1145/2576768.2598249</a>, <a class="reference external" href="https://doi.org/10.1145/2576768.2598249">doi:10.1145/2576768.2598249</a>.</td></tr>
+</tbody>
+</table>
+<table class="docutils citation" frame="void" id="blank-2017-sbt-3088676-3088680" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id3">[3]</a></td><td>Julian Blank, Kalyanmoy Deb, and Sanaz Mostaghim. Solving the bi-objective traveling thief problem with multi-objective evolutionary algorithms. In <em>9th International Conference on Evolutionary Multi-Criterion Optimization - Volume 10173</em>, EMO 2017, 46–60. Berlin, Heidelberg, 2017. Springer-Verlag. URL: <a class="reference external" href="https://doi.org/10.1007/978-3-319-54157-0_4">https://doi.org/10.1007/978-3-319-54157-0_4</a>, <a class="reference external" href="https://doi.org/10.1007/978-3-319-54157-0_4">doi:10.1007/978-3-319-54157-0_4</a>.</td></tr>
+</tbody>
+</table>
+</p>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright GECCO2019.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.6.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>
