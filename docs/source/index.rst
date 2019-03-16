@@ -3,6 +3,21 @@
    :caption: Contents:
 
 
+Leaderboard
+=============================================================
+
+Submissions received:
+
+JoMar - Jonatas Batista Costa das Chagas and Marcone Jamilson Freitas Souza**
+
+shisunzhang - Jialong Shi, Jianyong Sun, Qingfu Zhang
+
+ALLAOUI - Mohcin Allaoui, Belaid Ahiod
+
+
+**Will be created soon. Whenever we receive a new submission, it will be updated.**
+
+
 GECCO2019 - Bi-objective Traveling Thief Competition
 =============================================================
 
@@ -15,6 +30,7 @@ The Genetic and Evolutionary Computation Conference (GECCO) presents the latest 
 News
 =============================================================
 
+**Feb 20, 2019**: We are happy to announce the competition started. Submissions will be accepted until **June 30, 2019, Midnight, UTC-12**.
 
 
 
@@ -100,9 +116,12 @@ Deadline for this competition is the
 
 .. rst-class:: center
 
-    **TBA, 2019, Midnight, UTC-12**
+    **June 30, 2019, Midnight, UTC-12**
 
-Please submit by sending an email to blankjul@egr.msu.edu with the subject: **GECCO2019 Competition - Traveling Thief Submission**
+Before you submit please make sure to verify the correctness of your solutions using **Verify.java**
+(You might need to pull the latest version of the project).
+
+Please submit by sending an email to blankjul@egr.msu.edu with the subject: **GECCO2019 - Bi-objective Traveling Thief Problem Submission**
 and provide as a link where we are able to download your results.
 
 

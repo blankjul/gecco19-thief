@@ -165,4 +165,17 @@ public class TravelingThiefProblem {
     }
 
 
+    /**
+     * This method verifies if the tour and packing plan is matching with the objective values saved in this object.
+     * @throws RuntimeException
+     */
+    public void verify(Solution s) throws RuntimeException {
+        Solution correct = this.evaluate(s.pi, s.z);
+        if (s.time != correct.time || s.profit != correct.profit) {
+            throw new RuntimeException("Pi and Z are not matching with the objectives values time and profit.");
+        }
+
+    }
+
+
 }
