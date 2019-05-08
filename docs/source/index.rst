@@ -2,22 +2,6 @@
    :maxdepth: 2
    :caption: Contents:
 
-
-Leaderboard
-=============================================================
-
-Submissions received:
-
-JoMar - Jonatas Batista Costa das Chagas and Marcone Jamilson Freitas Souza**
-
-shisunzhang - Jialong Shi, Jianyong Sun, Qingfu Zhang
-
-ALLAOUI - Mohcin Allaoui, Belaid Ahiod
-
-
-**Will be created soon. Whenever we receive a new submission, it will be updated.**
-
-
 GECCO2019 - Bi-objective Traveling Thief Competition
 =============================================================
 
@@ -25,13 +9,6 @@ GECCO2019 - Bi-objective Traveling Thief Competition
     :height: 250
 
 The Genetic and Evolutionary Computation Conference (GECCO) presents the latest high-quality results in genetic and evolutionary computation since 1999. Topics include: genetic algorithms, genetic programming, ant colony optimization and swarm intelligence, complex systems (artificial life/robotics/evolvable hardware/generative and developmental systems/artificial immune systems), digital entertainment technologies and arts, evolutionary combinatorial optimization and metaheuristics, evolutionary machine learning, evolutionary multiobjective optimization, evolutionary numerical optimization, real world applications, search-based software engineering, theory and more.
-
-
-News
-=============================================================
-
-**Feb 20, 2019**: We are happy to announce the competition started. Submissions will be accepted until **June 30, 2019, Midnight, UTC-12**.
-
 
 
 
@@ -48,6 +25,66 @@ and relocation of containers in a port while minimizing idle times of ships.
 
 The goal of this competition is to provide a platform for researchers in computational intelligence working on multi-component optimization problems.
 The main focus of this competition is on the combination of TSP and Knapsack problems. However, we plan to extend this competition format to more complex combinations of problems (that have typically been dealt with individually in the past decades) in the upcoming years.
+
+
+
+News
+=============================================================
+
+**March 21, 2019**: Prize money - the winner(s) of the competition will receive a cash prize of AUD 400 (sponsored by Markus Wagner)
+
+**March 18, 2019**: Leaderboard was created. From now on every submission will be reflected.
+
+**Feb 20, 2019**: We are happy to announce the competition started. Submissions will be accepted until **June 30, 2019, Midnight, UTC-12**.
+
+
+
+
+Leaderboard
+=============================================================
+
+**Last Update: March 18, 2019**
+
+One comment about the leaderboard:
+
+We would like encourage you to submit whenever you found some improvements of your algorithm. By doing this, we
+can out the most of this competition. By knowing better solutions for test instances are available
+all participants are able to find out possible weaknesses of their algorithms and can work on it before the deadline
+has passed. This allows everybody to continuously work on their implementation.
+Pursuing the strategy of keeping good results confidential as long as possible, slows down the overall development
+and harms the progress in this research field.
+
+Whenever we receive a submission, we will execute the evaluation procedure.
+Since the estimated ideal and nadir point might change, the relative Hypervolume can change as well (even though
+your submission is the same). We will make the achieved objective values for each instance publicly available, but
+not the design space values (tour and packing plan). The reason is that we do not like all participants
+to execute local searches on the result of other submissions.
+
+
+Submissions received:
+
+JoMar - Jonatas Batista Costa das Chagas and Marcone Jamilson Freitas Souza
+
+shisunzhang - Jialong Shi, Jianyong Sun, Qingfu Zhang
+
+ALLAOUI - Mohcin Allaoui, Belaid Ahiod
+
+ValAurTeam
+
+The step by step evaluation is available `here <_static/evaluation.html>`_.
+The objective values of each submissions (the mapping between tours/packing plans and objectives values has been checked for correctness) are available `here <https://github.com/julesy89/gecco19-thief/tree/master/submissions>`_.
+
+
+The current overall ranking is:
+
+.. raw:: html
+   :file: _static/evaluation_ranking.html
+
+The ranking is calculated as described. The results for each test instance for each participant is shown below:
+
+.. raw:: html
+   :file: _static/evaluation_hv.html
+
 
 
 

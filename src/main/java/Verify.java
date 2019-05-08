@@ -29,14 +29,14 @@ public class Verify {
 
     public static void main(String[] args)  throws IOException {
 
-        final String TEAM = "jomar";
+        final String TEAM = "ValAurTeam";
 
         List<String> instances = Arrays.asList("a280_n279", "a280_n1395", "a280_n2790",
         "fnl4461_n4460", "fnl4461_n22300", "fnl4461_n44600", "pla33810_n33809", "pla33810_n169045", "pla33810_n338090");
 
         for (String instance : instances) {
 
-            //instance = instance.replace("_", "-");
+            instance = instance.replace("_", "-");
 
             // readProblem the problem from the file
             String fname = String.format("resources/%s.txt", instance.replace("_", "-"));
@@ -45,8 +45,8 @@ public class Verify {
             TravelingThiefProblem problem = Util.readProblem(is);
             problem.name = instance;
 
-            Path pathToX = Paths.get("results", TEAM, String.format("%s_%s.x", TEAM, instance));
-            Path pathToF = Paths.get("results", TEAM, String.format("%s_%s.f", TEAM, instance));
+            Path pathToX = Paths.get("submissions", TEAM, String.format("%s_%s.x", TEAM, instance));
+            Path pathToF = Paths.get("submissions", TEAM, String.format("%s_%s.f", TEAM, instance));
 
             String[] objectives = new String(Files.readAllBytes(pathToF)).split("\n");
             int counter = 0;
@@ -112,7 +112,7 @@ public class Verify {
                     double profit = Double.valueOf(vals[1]);
 
 
-                    double precision = 1e-6;
+                    double precision = 1e-4;
                     if (Math.abs(time - solution.time) > precision || Math.abs(profit - solution.profit) > precision) {
                         System.out.println("ERROR");
                         System.out.println(String.format("Solution %s", counter));
