@@ -69,7 +69,9 @@ shisunzhang - Jialong Shi, Jianyong Sun, Qingfu Zhang
 
 ALLAOUI - Mohcin Allaoui, Belaid Ahiod
 
-ValAurTeam
+ValAurTeam - Valeriu Motroi
+
+faria - Gilson Faria
 
 The step by step evaluation is available `here <_static/evaluation.html>`_.
 The objective values of each submissions (the mapping between tours/packing plans and objectives values has been checked for correctness) are available `here <https://github.com/julesy89/gecco19-thief/tree/master/submissions>`_.

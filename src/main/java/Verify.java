@@ -29,17 +29,18 @@ public class Verify {
 
     public static void main(String[] args)  throws IOException {
 
-        final String TEAM = "ValAurTeam";
+        final String TEAM = "jomar";
 
         List<String> instances = Arrays.asList("a280_n279", "a280_n1395", "a280_n2790",
         "fnl4461_n4460", "fnl4461_n22300", "fnl4461_n44600", "pla33810_n33809", "pla33810_n169045", "pla33810_n338090");
 
         for (String instance : instances) {
 
-            instance = instance.replace("_", "-");
+            //instance = instance.replace("_", "-");
 
             // readProblem the problem from the file
             String fname = String.format("resources/%s.txt", instance.replace("_", "-"));
+            //String fname = String.format("resources/%s.txt", instance);
             InputStream is = LOADER.getResourceAsStream(fname);
 
             TravelingThiefProblem problem = Util.readProblem(is);
