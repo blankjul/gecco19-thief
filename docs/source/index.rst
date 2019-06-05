@@ -43,7 +43,7 @@ News
 Leaderboard
 =============================================================
 
-**Last Update: March 18, 2019**
+**Last Update: June 5, 2019**
 
 One comment about the leaderboard:
 
@@ -61,7 +61,7 @@ not the design space values (tour and packing plan). The reason is that we do no
 to execute local searches on the result of other submissions.
 
 
-Submissions received:
+**Submissions received:**
 
 JoMar - Jonatas Batista Costa das Chagas and Marcone Jamilson Freitas Souza
 
@@ -72,6 +72,9 @@ ALLAOUI - Mohcin Allaoui, Belaid Ahiod
 ValAurTeam - Valeriu Motroi
 
 faria - Gilson Faria
+
+HPI - Philipp Fischbeck et al.
+
 
 The step by step evaluation is available `here <_static/evaluation.html>`_.
 The objective values of each submissions (the mapping between tours/packing plans and objectives values has been checked for correctness) are available `here <https://github.com/julesy89/gecco19-thief/tree/master/submissions>`_.
