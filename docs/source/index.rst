@@ -43,7 +43,7 @@ News
 Leaderboard
 =============================================================
 
-**Last Update: June 5, 2019**
+**Last Update: June 17, 2019**
 
 One comment about the leaderboard:
 
