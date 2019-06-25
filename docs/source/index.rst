@@ -43,7 +43,7 @@ News
 Leaderboard
 =============================================================
 
-**Last Update: June 17, 2019**
+**Last Update: June 25, 2019**
 
 One comment about the leaderboard:
 
@@ -74,6 +74,8 @@ ValAurTeam - Valeriu Motroi
 faria - Gilson Faria
 
 HPI - Philipp Fischbeck et al.
+
+NTGA - Maciej Laszczyk
 
 
 The step by step evaluation is available `here <_static/evaluation.html>`_.

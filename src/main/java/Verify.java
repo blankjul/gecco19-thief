@@ -29,22 +29,22 @@ public class Verify {
 
     public static void main(String[] args)  throws IOException {
 
-        final String TEAM = "HPI";
+        final String TEAM = "NTGA";
 
         List<String> instances = Arrays.asList("a280_n279", "a280_n1395", "a280_n2790",
         "fnl4461_n4460", "fnl4461_n22300", "fnl4461_n44600", "pla33810_n33809", "pla33810_n169045", "pla33810_n338090");
 
         for (String instance : instances) {
 
-            instance = instance.replace("_", "-");
-
             // readProblem the problem from the file
-            //String fname = String.format("resources/%s.txt", instance.replace("_", "-"));
-            String fname = String.format("resources/%s.txt", instance);
+            String fname = String.format("resources/%s.txt", instance.replace("_", "-"));
             InputStream is = LOADER.getResourceAsStream(fname);
 
             TravelingThiefProblem problem = Util.readProblem(is);
             problem.name = instance;
+
+            // Comment this out if you have replaced it in your output files
+            instance = instance.replace("_", "-");
 
             Path pathToX = Paths.get("submissions", TEAM, String.format("%s_%s.x", TEAM, instance));
             Path pathToF = Paths.get("submissions", TEAM, String.format("%s_%s.f", TEAM, instance));
