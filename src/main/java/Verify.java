@@ -29,7 +29,7 @@ public class Verify {
 
     public static void main(String[] args)  throws IOException {
 
-        final String TEAM = "NTGA";
+        final String TEAM = "SSteam";
 
         List<String> instances = Arrays.asList("a280_n279", "a280_n1395", "a280_n2790",
         "fnl4461_n4460", "fnl4461_n22300", "fnl4461_n44600", "pla33810_n33809", "pla33810_n169045", "pla33810_n338090");

@@ -43,7 +43,7 @@ News
 Leaderboard
 =============================================================
 
-**Last Update: June 25, 2019**
+**Last Update: June 27, 2019**
 
 One comment about the leaderboard:
 
@@ -75,7 +75,9 @@ faria - Gilson Faria
 
 HPI - Philipp Fischbeck et al.
 
-NTGA - Maciej Laszczyk
+NTGA - Maciej Laszczyk, Pawel Myszkowski
+
+SSteam - Roberto Santana and Siddhartha Shakya
 
 
 The step by step evaluation is available `here <_static/evaluation.html>`_.
