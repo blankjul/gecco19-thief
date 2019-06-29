@@ -43,7 +43,7 @@ News
 Leaderboard
 =============================================================
 
-**Last Update: June 27, 2019**
+**Last Update: June 29, 2019**
 
 One comment about the leaderboard:
 
@@ -78,6 +78,8 @@ HPI - Philipp Fischbeck et al.
 NTGA - Maciej Laszczyk, Pawel Myszkowski
 
 SSteam - Roberto Santana and Siddhartha Shakya
+
+SamirO-ETF-ba - Samir Omanovic
 
 
 The step by step evaluation is available `here <_static/evaluation.html>`_.

@@ -29,7 +29,7 @@ public class Verify {
 
     public static void main(String[] args)  throws IOException {
 
-        final String TEAM = "SSteam";
+        final String TEAM = "shisunzhang";
 
         List<String> instances = Arrays.asList("a280_n279", "a280_n1395", "a280_n2790",
         "fnl4461_n4460", "fnl4461_n22300", "fnl4461_n44600", "pla33810_n33809", "pla33810_n169045", "pla33810_n338090");
@@ -44,7 +44,7 @@ public class Verify {
             problem.name = instance;
 
             // Comment this out if you have replaced it in your output files
-            instance = instance.replace("_", "-");
+            //instance = instance.replace("_", "-");
 
             Path pathToX = Paths.get("submissions", TEAM, String.format("%s_%s.x", TEAM, instance));
             Path pathToF = Paths.get("submissions", TEAM, String.format("%s_%s.f", TEAM, instance));
