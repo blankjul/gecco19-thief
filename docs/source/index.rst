@@ -31,6 +31,9 @@ The main focus of this competition is on the combination of TSP and Knapsack pro
 News
 =============================================================
 
+
+**June 30, 2019**: One day to go. Last chance for submissions!
+
 **March 21, 2019**: Prize money - the winner(s) of the competition will receive a cash prize of AUD 400 (sponsored by Markus Wagner)
 
 **March 18, 2019**: Leaderboard was created. From now on every submission will be reflected.
@@ -43,7 +46,7 @@ News
 Leaderboard
 =============================================================
 
-**Last Update: June 29, 2019**
+**Last Update: June 30, 2019**
 
 One comment about the leaderboard:
 
