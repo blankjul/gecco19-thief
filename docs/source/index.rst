@@ -31,6 +31,7 @@ The main focus of this competition is on the combination of TSP and Knapsack pro
 News
 =============================================================
 
+**July 4, 2019**: And the winner is ... (The results are shown below)
 
 **June 30, 2019**: One day to go. Last chance for submissions!
 
@@ -46,7 +47,38 @@ News
 Leaderboard
 =============================================================
 
-**Last Update: June 30, 2019**
+**FINAL**
+
+.. raw:: html
+
+    <div style="text-align:center">
+    <p style="color:#FF0000; font-size:22px;">And the winner is </p>
+    <p style="color:#FF0000; font-size:30px;">HPI</p>
+
+    <p style="color:#FF0000; font-size:12;">
+    Philipp Fischbeck, Lukas Behrendt, Freya Behrens, Rachel Brabender, Markus Brand, Erik Brendel, Tim Cech, Wilhelm Friedemann, Hans Gawendowicz, Merlin de la Haye, Pius Ladenburger, Julius Lischeid, Alexander Löser, Marcus Pappik, Jannik Peters, Fabian Pottbäcker, David Stangl, Daniel Stephan, Michael Vaichenker, Anton Weltzien, Marcus Wilhelm.
+    </p>
+
+    <p style="color:#FF0000; font-size:22px;">Congratulations!</p>
+     </div>
+
+
+.. image:: figures/rank.png
+    :align: center
+    :width: 400px
+
+
+.. raw:: html
+
+    <p style="color:#FF0000; font-size:12;">The 2nd place is taken by team JoMar and the 3rd place by team NTGA.
+    We have received 13 submissions in total. Two submissions were invalid and are
+    therefore not shown in the evaluation. We like to thank all participants for the effort made to investigate the
+    traveling thief problem.
+    We hope you have enjoyed implementing new ideas and having contributed to this competition!</p>
+
+
+
+
 
 One comment about the leaderboard:
 
@@ -66,13 +98,11 @@ to execute local searches on the result of other submissions.
 
 **Submissions received:**
 
-JoMar - Jonatas Batista Costa das Chagas and Marcone Jamilson Freitas Souza
+JoMar - Jonatas Batista Costa das Chagas, Marcone Jamilson Freitas Souza
 
 shisunzhang - Jialong Shi, Jianyong Sun, Qingfu Zhang
 
 ALLAOUI - Mohcin Allaoui, Belaid Ahiod
-
-ValAurTeam - Valeriu Motroi
 
 faria - Gilson Faria
 
@@ -80,9 +110,19 @@ HPI - Philipp Fischbeck et al.
 
 NTGA - Maciej Laszczyk, Pawel Myszkowski
 
-SSteam - Roberto Santana and Siddhartha Shakya
+SSteam - Roberto Santana, Siddhartha Shakya
 
 SamirO-ETF-ba - Samir Omanovic
+
+FRA - Lukas Atkinson, Samuel D'Aprea, Nils Jorek
+
+sinc - Matías Gerard, Leandro Vignolo
+
+JG - Julia Garbaruk
+
+MicroGA - Gregorio Toscano, David Tovias
+
+ValAurTeam - Valeriu Motroi
 
 
 The step by step evaluation is available `here <_static/evaluation.html>`_.
@@ -381,6 +421,8 @@ with a symmetric tour. Also, the Pareto front is non-convex.
 .. image:: figures/scenario_obj_space.svg
     :align: center
     :width: 400px
+
+
 
 
 
