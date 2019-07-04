@@ -70,7 +70,7 @@ Leaderboard
 
 .. raw:: html
 
-    <p style="color:#FF0000; font-size:12;">The 2nd place is taken by team JoMar and the 3rd place by team NTGA.
+    <p style="color:#FF0000; font-size:12;">The 2nd place is taken by team JoMar and the 3rd place by team NTGA and SSteam.
     We have received 13 submissions in total. Two submissions were invalid and are
     therefore not shown in the evaluation. We like to thank all participants for the effort made to investigate the
     traveling thief problem.
